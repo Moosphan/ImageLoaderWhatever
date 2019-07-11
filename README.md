@@ -35,7 +35,7 @@ Android 主流图片加载引擎的动态替换方案。
 
 
 
-![Android主流图片框架封装UML (2)](/Users/moos/Desktop/Android主流图片框架封装UML (2).png)
+![AndroidloaderUML](https://github.com/Moosphan/ImageLoaderWhatever/blob/eed0791c036a0be1b5b227d89e90eb92d4a1fb30/uml/android_image_loader_uml.png)
 
 图中可以看出，我们最初的设想是：通过 `ImageLoader` 来管理整体的策略配置。正如面向对象原则中**依赖倒置原则**所阐述的那样，它只需要与 `ILoader` 产生依赖关系，而不应该与具体实现（如GlideLoaderStrategy）产生关系。这样一来，不论我们增加了其他任何一种策略的实现，都不会影响到我们最终代码使用的地方。
 
