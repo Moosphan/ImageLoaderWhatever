@@ -20,12 +20,12 @@ Android 主流图片加载引擎的动态替换方案。
    ImageLoader
               .INSTANCE
               .with {
-                       url = "资源地址"
-                				angle = 60
-                       error = R.drawable.userheadholder
-                       placeholder = R.drawable.userheadholder
-                       cacheStyle = LoadOptions.LoaderCacheStrategy.RESULT
-                       displayStyle = LoadOptions.LoaderImageScaleType.CENTER_CROP
+                   url = "资源地址"
+                angle = 60
+                   error = R.drawable.userheadholder
+                   placeholder = R.drawable.userheadholder
+                   cacheStyle = LoadOptions.LoaderCacheStrategy.RESULT
+                   displayStyle = LoadOptions.LoaderImageScaleType.CENTER_CROP
                }.into(imageView)
    ```
 
