@@ -21,7 +21,7 @@ Android 主流图片加载引擎的动态替换方案。
               .INSTANCE
               .with {
                    url = "资源地址"
-                angle = 60
+                   angle = 60
                    error = R.drawable.userheadholder
                    placeholder = R.drawable.userheadholder
                    cacheStyle = LoadOptions.LoaderCacheStrategy.RESULT
@@ -35,7 +35,7 @@ Android 主流图片加载引擎的动态替换方案。
 
 
 
-![AndroidloaderUML](https://github.com/Moosphan/ImageLoaderWhatever/blob/eed0791c036a0be1b5b227d89e90eb92d4a1fb30/uml/android_image_loader_uml.png)
+![AndroidloaderUML](https://github.com/Moosphan/ImageLoaderWhatever/blob/441bf07bbaf98414c21c5b1b1d4739d54cf0c947/uml/android_image_loader_uml.png)
 
 图中可以看出，我们最初的设想是：通过 `ImageLoader` 来管理整体的策略配置。正如面向对象原则中**依赖倒置原则**所阐述的那样，它只需要与 `ILoader` 产生依赖关系，而不应该与具体实现（如GlideLoaderStrategy）产生关系。这样一来，不论我们增加了其他任何一种策略的实现，都不会影响到我们最终代码使用的地方。
 
